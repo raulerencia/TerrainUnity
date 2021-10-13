@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PushRigidbody : MonoBehaviour
 {
-    public float pushPower = 2.0f;
+    /*public float pushPower = 2.0f;
 
     private void OnControllerColliderHit(ControllerColliderHit hit){
         Rigidbody body = hit.collider.attachedRigidbody;
@@ -20,5 +20,5 @@ public class PushRigidbody : MonoBehaviour
         Vector3 pushDir = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
 
         body.velocity = pushDir * pushpower;
-    }
+    }*/
 }
