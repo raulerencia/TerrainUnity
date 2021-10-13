@@ -12,19 +12,20 @@ public class AudioController : MonoBehaviour
 
     void Awake()    
     {
-        AudioSource audioSource = GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Start is called before the first frame update
     void Start()
     {
        audioSource.clip = backgrounMusic;
-       audioSource.Play();       
+      // audioSource.Play();       
     }
 
     public void AudioSteps()
     { 
         audioSource.PlayOneShot(steps, 1f);
+        Debug.Log("entra pasos");
     }
     
 }
